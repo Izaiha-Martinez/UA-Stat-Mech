@@ -1,0 +1,27 @@
+.DS_Store
+*.pdf
+*.png
+*.csv
+*.npy
+*.jpeg
+*.jpg
+*.png
+.venv/
+*.pyc
+*.aux
+*.fls
+*.log
+*.gz
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+Astro Seminars/
+*.fits
+*.bbl
+*.blg
+*.dvi
+*.img
+Observational Techniques/Data/
+*.HTML
+Observational Techniques/Lectures/
