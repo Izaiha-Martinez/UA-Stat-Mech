@@ -1,0 +1,92 @@
+\documentclass[12pt]{article} 
+\usepackage{color,graphicx} 
+\usepackage{enumitem} %For alphabet bullet points 
+\usepackage{url} %For proper URL formatting
+
+\usepackage{physics}
+\usepackage{amsmath} %Might be useful
+\usepackage{xcolor} %colored box
+\usepackage{tcolorbox} % For colored boxes
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr} % For custom headers and footers
+
+
+\usepackage{listings} %For coding languages 
+
+\usepackage{subcaption}
+
+\lstset{
+    language=Matlab, % specify MATLAB as the language
+    basicstyle=\ttfamily\small, % sets font size and family
+    keywordstyle=\color{blue}, % color for keywords
+    commentstyle=\color{gray}, % color for comments
+    stringstyle=\color{red}, % color for strings
+    numbers=left, % line numbers on the left
+    numberstyle=\tiny\color{gray}, % style for line numbers
+    stepnumber=1, % line number step
+    numbersep=5pt, % distance between line numbers and code
+    frame=single, % box around the code
+    breaklines=true, % line breaking if code is too long
+    tabsize=4 % tab size
+}
+
+\textwidth 170mm
+\textheight 210mm
+\topmargin 0.0mm
+\oddsidemargin 0mm
+\evensidemargin 0mm
+\parindent 0pt
+
+\title{Statistical Mechanics: Qual Review}
+\author{Izaiha Martinez}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyhead[R]{Martinez} % Right side of the header
+\fancyfoot[C]{\thepage} % Page number
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\input{1 - First and second laws.tex}
+
+\clearpage
+
+\input{2 - Potentials.tex}
+
+\clearpage
+
+\input{3 - Cyclic processes.tex}
+
+\clearpage
+
+\input{4 - Equilibrium ensembles.tex}
+
+\clearpage
+
+\input{5 - Classical and quantum cases.tex}
+
+\clearpage
+
+\input{6 - Ideal quantum gases.tex}
+
+\clearpage
+
+
+
+
+%\bibliographystyle{plain} 
+%\bibliography{references}
+
+
+ 
+
+
+\end{document}
