@@ -2,33 +2,14 @@
 \usepackage{color,graphicx} 
 \usepackage{enumitem} %For alphabet bullet points 
 \usepackage{url} %For proper URL formatting
-
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
 \usepackage{physics}
 \usepackage{amsmath} %Might be useful
-\usepackage{xcolor} %colored box
-\usepackage{tcolorbox} % For colored boxes
-\usepackage[table]{xcolor}
 \usepackage{fancyhdr} % For custom headers and footers
 
-
-\usepackage{listings} %For coding languages 
-
-\usepackage{subcaption}
-
-\lstset{
-    language=Matlab, % specify MATLAB as the language
-    basicstyle=\ttfamily\small, % sets font size and family
-    keywordstyle=\color{blue}, % color for keywords
-    commentstyle=\color{gray}, % color for comments
-    stringstyle=\color{red}, % color for strings
-    numbers=left, % line numbers on the left
-    numberstyle=\tiny\color{gray}, % style for line numbers
-    stepnumber=1, % line number step
-    numbersep=5pt, % distance between line numbers and code
-    frame=single, % box around the code
-    breaklines=true, % line breaking if code is too long
-    tabsize=4 % tab size
-}
+% \newcommand{\Essential}{\href{https://www.google.com/search?q=essential+statistical+physics+kennett+pdf&sca_esv=d12916411115a520&rlz=1C5OZZY_enUS1158US1158&sxsrf=AE3TifN4Zc-ipBPOobbdtRYRqFEYdnWEUw%3A1748901745377&ei=cR8-aI3jFqLGp84PhteR6AY&oq=essential+statistical+physics+ke&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGVzc2VudGlhbCBzdGF0aXN0aWNhbCBwaHlzaWNzIGtlKgIIATIEECMYJzIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESM87UKUdWIUfcAR4AJABAJgBYKABrgGqAQEyuAEDyAEA-AEBmAIGoALFAcICCxAAGIAEGLADGKIEwgIIEAAYsAMY7wWYAwCIBgGQBgWSBwM1LjGgB-oQsgcDMS4xuAe6AcIHBTAuMy4zyAcT&sclient=gws-wiz-serp}{Kennett (2021)}}
+% \newcommand{\Thermal}{\href{https://jontalle.web.engr.illinois.edu/Public/BOOKS/Kittel-ThermalPhysics.80.pdf}{Kittel \& Kroemer (1980)}}
+% \newcommand{\Intro}{\href{https://perso.crans.org/sylvainrey/Biblio%20Physique/Physique/Thermodynamique/%5BCallen%5D%20Thermodynamics%20and%20an%20Introduction%20to%20Thermostatistics.pdf}{Callen (1985)}}
 
 \textwidth 170mm
 \textheight 210mm
@@ -52,8 +33,9 @@
 
 \maketitle
 
+\tableofcontents
 
-
+\clearpage
 
 \input{1 - First and second laws.tex}
 
@@ -79,11 +61,7 @@
 
 \clearpage
 
-
-
-
-%\bibliographystyle{plain} 
-%\bibliography{references}
+\input{7 - Equation Sheet.tex}
 
 
  
