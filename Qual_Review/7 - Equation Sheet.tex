@@ -5,79 +5,79 @@
 \subsection*{Forms of Entropy:}
 
 \begin{align}
-    S(N, U) = k \log \Omega 
+	S(N, U) = k \log \Omega
 \end{align}
 
 \subsection*{Partial derivatives:}
 
 \begin{align}
-    \text{Entropy: } S(U, N, V) = 
-        \begin{cases}
-        \pdv{S}{U} = \frac{1}{T} \\
-        \pdv{S}{V} = \frac{P}{T} \\
-        \pdv{S}{N} = -\frac{\mu}{T} \\
-        \end{cases}
+	\text{Entropy: } S(U, N, V) =
+	\begin{cases}
+		\pdv{S}{U} = \frac{1}{T}    \\
+		\pdv{S}{V} = \frac{P}{T}    \\
+		\pdv{S}{N} = -\frac{\mu}{T} \\
+	\end{cases}
 \end{align}
 
 \subsubsection*{\textcolor{magenta}{Maxwell's Relation:}}
 
 \begin{align}
-    \text{Energy: } & U(S, V, N) = TS - PV + \mu N 
-        \begin{cases}
-        \pdv{U}{S} = T \\
-        \pdv{U}{V} = -P \\
-        \pdv{U}{N} = \mu \\
-        \end{cases} \\    
-    \text{Helmholts Free Energy: } & F(T, N, V) = U - T S(U, N, V) 
-        \begin{cases}
-        \pdv{F}{T} = -S \\
-        \pdv{F}{N} = \mu \\
-        \pdv{F}{V} = -P \\
-        \end{cases} \\
-    \text{Gibbs Free Energy: } & G(N, T, P) = F(N, T, V) + PV 
-        \begin{cases}
-        \pdv{G}{T} = S \\
-        \pdv{G}{P} = V \\
-        \pdv{G}{N} = \mu \\
-        \end{cases} \\
+	\text{Energy: }                & U(S, V, N) = TS - PV + \mu N
+	\begin{cases}
+		\pdv{U}{S} = T   \\
+		\pdv{U}{V} = -P  \\
+		\pdv{U}{N} = \mu \\
+	\end{cases}                                               \\
+	\text{Helmholts Free Energy: } & F(T, N, V) = U - T S(U, N, V)
+	\begin{cases}
+		\pdv{F}{T} = -S  \\
+		\pdv{F}{N} = \mu \\
+		\pdv{F}{V} = -P  \\
+	\end{cases}                                               \\
+	\text{Gibbs Free Energy: }     & G(N, T, P) = F(N, T, V) + PV
+	\begin{cases}
+		\pdv{G}{T} = S   \\
+		\pdv{G}{P} = V   \\
+		\pdv{G}{N} = \mu \\
+	\end{cases}                                               \\
 \end{align}
 
 \subsubsection*{Other Partial Derivatives:}
 
 \begin{align}
-    \text{Enthalpy: } & H(S, V, N) = U + PV 
-        \begin{cases}
-        \pdv{H}{S} = T \\
-        \pdv{H}{P} = V \\
-        \pdv{H}{N} = \mu \\
-        \end{cases} \\  
-    \text{Grand Potential:} & \Phi(T, \mu, V) = \mu N - F(T, N, V)
-    \begin{cases}
-    \pdv{\Phi}{T} = S \\
-    \pdv{\Phi}{\mu} = N \\
-    \pdv{\Phi}{V} = P \\
-    \end{cases}
+	\text{Enthalpy: }       & H(S, V, N) = U + PV
+	\begin{cases}
+		\pdv{H}{S} = T   \\
+		\pdv{H}{P} = V   \\
+		\pdv{H}{N} = \mu \\
+	\end{cases}                                               \\
+	\text{Grand Potential:} & \Phi(T, \mu, V) = \mu N - F(T, N, V)
+	\begin{cases}
+		\pdv{\Phi}{T} = S   \\
+		\pdv{\Phi}{\mu} = N \\
+		\pdv{\Phi}{V} = P   \\
+	\end{cases}
 \end{align}
-     
 
-\subsection*{Partition Funciton:}
+
+\subsection*{Partition Function:}
 
 \begin{align}
-    \text{Normal  } z =& \sum e^{E_i / kT} \\
-    \text{Many } z_1 =& \frac{1}{h^3} \int d^3x d^3p e^{-E/ kT}\text{, where } d^3 = p^2\sin\theta dp d\theta d\phi \\
-    \text{Lots } z_N =& \frac{1}{N!} z_1^N  \\
-    \text{Grand } \Xi =& \sum_{N=0}^{\inf} z_N e^{\mu N / kT} = \sum_{N=0}^{\inf} \frac{1}{N!} (\sum_a e^{E_a / kT})^N e^{\mu N / kT}
+	\text{Normal  } z = & \sum e^{E_i / kT}                                                                                            \\
+	\text{Many } z_1 =  & \frac{1}{h^3} \int d^3x d^3p e^{-E/ kT}\text{, where } d^3 = p^2\sin\theta dp d\theta d\phi                  \\
+	\text{Lots } z_N =  & \frac{1}{N!} z_1^N                                                                                           \\
+	\text{Grand } \Xi = & \sum_{N=0}^{\inf} z_N e^{\mu N / kT} = \sum_{N=0}^{\inf} \frac{1}{N!} (\sum_a e^{E_a / kT})^N e^{\mu N / kT}
 \end{align}
 
 
 \subsection*{Free Energy Forms:}
 \begin{align}
-    F = - KT \ln(z)
+	F = - KT \ln(z)
 \end{align}
 
 \subsection*{Approximations}
 
 \begin{itemize}
-    \item Strinling Approximation (log at large limits)
-    \item $k T = \beta = \tau$
+	\item Strinling Approximation (log at large limits)
+	\item $k T = \beta = \tau$
 \end{itemize}
