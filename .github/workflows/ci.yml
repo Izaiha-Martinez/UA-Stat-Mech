@@ -55,7 +55,6 @@ jobs:
           name: my-slides
           path: 'Qual_Review/SM.pdf'
 
-
       - name: GH Release
 
         if: github.ref_type == 'tag'
@@ -65,3 +64,4 @@ jobs:
           make_latest: true
           generate_release_notes: true
           files: 'Qual_Review/SM.pdf'
+
