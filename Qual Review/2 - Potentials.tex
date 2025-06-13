@@ -1,2 +1,62 @@
 
 \section{Potentials}
+
+
+\begin{itemize}
+    \item \textcolor{magenta}{check section on partial derivative in the equation sheet}
+    \item fundamental relation:
+    \begin{equation}
+        U = TS - PV + \mu N
+    \end{equation}
+    \begin{itemize}
+        \item total energy of a system (microcanonical ensemble)
+        \item you can multiply this by a factor: $\lambda U = \lambda (TS - PV + \mu N)$
+        \item the derivative is uneffected 
+    \end{itemize}
+    \item Gibbs-Duhem relation: $d\mu = -s dT + \nu dP$, $s = S/N$ \& $\nu = V/N$
+\end{itemize}
+
+\subsection*{Legendre Transforms \& free energies}
+\begin{itemize}
+    \item Legendre transforms are used to change which variables a thermodynamic potential depends on
+    \begin{equation*}
+        Y(p) = y - px, p = dy/dx
+    \end{equation*}
+    \item Helmholts Free Energy: represents the energy avilable to do useful work at constant temp \& volume
+    \begin{align*}
+        F(T,V, N) &= U - TS \\
+        dF &= -S dT - P dV + \mu dN
+    \end{align*}
+
+    \item Enthalpy: changing the independent variable from V to P, constant P \& entropy 
+    \begin{align*}
+        H(S, P, N) &= U + PV \\
+        dH &= T dS + V dP + \mu dN 
+    \end{align*}
+
+    \item Gibbs Free Energy: how much energy is available to do non-volume work at constant T \& P
+    \begin{align*}
+        G(T, P, N) &= F + PV = H - TS = U -TS + PV \\
+        dG &= S dT + V dP + \mu dN 
+    \end{align*}
+
+\end{itemize}
+
+\subsection*{Maxwell Relations}
+\begin{itemize}
+    \item if the integral of dF along a path in x y space is independent of the path: 
+    \begin{align*}
+        \pdv{f(x,y)}{y} = \pdv{F(x,y)}{x}{y} = \pdv{F(x,y)}{y}{x} = &\pdv{g(x,y)}{x} \\
+        \text{given } dF &= f(x,y)dx + g(x,y)dy
+    \end{align*}
+    \item thus (setting $dN = 0$)
+    \begin{align*}
+        \text{Energy: } dU =& T dS - PdV \rightarrow \pdv{T}{V}|_{S,N} = - \pdv{P}{S}|_{V,N} \\
+        \text{Helmholts Free Energy: } dF =& -S dT - P dV \rightarrow \pdv{S}{V}|_T = \pdv{P}{T}|_V \\
+        \text{Enthalpy: } dH =& T dS + V dP \rightarrow \pdv{T}{P}|_S = \pdv{V}{S}|_P \\
+        \text{Gibbs Free Energy: } dG =& S dT + V dP  \rightarrow \pdv{S}{P}|_T = - \pdv{V}{T}|_P 
+    \end{align*}
+
+\end{itemize}
+
+\subsection*{Partition Funciton}
