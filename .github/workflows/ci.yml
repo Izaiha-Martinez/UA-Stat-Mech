@@ -39,7 +39,7 @@ jobs:
           # texlive_version: 2025
           latexmk_shell_escape: true
           work_in_root_file_dir: true
-          root_file: 'Qual Review/SM.tex'
+          root_file: 'Qual_Review/SM.tex'
           docker_image: texlive/texlive@sha256:b09360744230661858dc48526b9f20aa1269dba37d4e5310e3150b8f93584e58
           # pre_compile: |
           #   tlmgr install wrapfig enumitem titlesec svg physics biblatex biblatex-phys
@@ -49,7 +49,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: my-slides
-          path: 'Qual Review/SM.pdf'
+          path: 'Qual_Review/main.pdf'
 
 
       - name: GH Release
@@ -60,4 +60,4 @@ jobs:
         with:
           make_latest: true
           generate_release_notes: true
-          files: 'Qual Review/SM.pdf'
+          files: 'Qual_Review/main.pdf'
