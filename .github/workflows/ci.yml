@@ -46,10 +46,14 @@ jobs:
           #   tlmgr install tocbibind siunitx cleveref transparent graphbox
           #   tlmgr install minted appendixnumberbeamer hyperref bbold
 
+      - run : | 
+            echo "Listing all files in the repository:"
+            ls -alhtrR 
+
       - uses: actions/upload-artifact@v4
         with:
           name: my-slides
-          path: 'Qual_Review/main.pdf'
+          path: 'Qual_Review/SM.pdf'
 
 
       - name: GH Release
@@ -60,4 +64,4 @@ jobs:
         with:
           make_latest: true
           generate_release_notes: true
-          files: 'Qual_Review/main.pdf'
+          files: 'Qual_Review/SM.pdf'
