@@ -63,10 +63,10 @@
 \subsection*{Partition Function:}
 
 \begin{align}
-	\text{Normal:  } z & = \sum e^{E_i / kT}                                                                                            \\
-	\text{One: } z_1   & = \frac{1}{h^3} \int d^3x d^3p e^{-E/ kT}\text{, where } d^3 = p^2\sin\theta dp d\theta d\phi                  \\
-	\text{Many: } z_N  & = \frac{1}{N!} z_1^N                                                                                           \\
-	\text{Grand: } \Xi & = \sum_{N=0}^{\inf} z_N e^{\mu N / kT} = \sum_{N=0}^{\inf} \frac{1}{N!} (\sum_a e^{E_a / kT})^N e^{\mu N / kT}
+	\text{Normal:  } z &= \sum e^{E_i / kT}                                                                                            \\
+	\text{One: } z_1   &= \frac{1}{h^3} \int d^3x d^3p e^{-E/ kT}\text{, where } d^3 = p^2\sin\theta dp d\theta d\phi                  \\
+	\text{Many: } z_N  &= \frac{1}{N!} z_1^N                                                                                           \\
+	\text{Grand: } \Xi &= \sum_{N=0}^{\inf} z_N e^{\mu N / kT} = \sum_{N=0}^{\inf} \frac{1}{N!} (\sum_a e^{E_a / kT})^N e^{\mu N / kT}
 \end{align}
 
 
@@ -78,17 +78,17 @@
 \subsection*{Approximations}
 
 \begin{itemize}
-	\item Stirling Approximation (large limits of n ignore the $O$ term)
-	      \begin{align*}
-		      \ln(n!) & = n \ln(n) - n + O(\ln(n)) \\
-		      \ln(n!) & \approx n \ln(n) - n
-	      \end{align*}
+    \item Stirling Approximation (large limits of n ignore the $O$ term)
+    \begin{align*}
+		\ln(n!) &= n \ln(n) - n + O(\ln(n)) \\
+		\ln(n!) &\approx n \ln(n) - n
+	\end{align*}
 \end{itemize}
 
 
 \subsection*{Dumb Abbreviations}
 \begin{align*}
-	k T    & = \tau  = \beta^{-1} \\
-	\sigma & = \log g             \\
-	S      & = k \sigma
+	k T &= \tau  = \beta^{-1} \\
+	\sigma &= \log g \\
+	S &= k \sigma
 \end{align*}
