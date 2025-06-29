@@ -1,11 +1,9 @@
 .DS_Store
 *.pdf
-*.png
 *.csv
 *.npy
 *.jpeg
 *.jpg
-*.png
 .venv/
 *.pyc
 *.aux
