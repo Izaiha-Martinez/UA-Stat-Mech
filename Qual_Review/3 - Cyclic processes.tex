@@ -23,6 +23,8 @@
 		      with a reservoir}
 	\item \textcolor{violet}{work is the transfer of energy to a system by a change in the
 		      external parameters that describe the system}
+    \item \textcolor{violet}{entropy transfer in a reversible process is zero when only work is 
+    performed and no heat is transferred.}
 	\item we want to convert heat to work (steam engine, combustion engine)
 	\item bringing 2 systems together, the total energy is conserved but not the entropy,
 	      may increase
@@ -59,14 +61,14 @@
 	\item work generated during 1 cycle of a reversible process:
 	      \begin{align}
 		      W = Q_h - Q_l = (1 - T_l/T_h)Q_h = \frac{T_h - T_l}{T_l} Q_h \\
-		      \text{\textcolor{violet}{Carnot efficiency }} \eta_c \equiv (\frac{W}{Q_h})_\text{rev} = \frac{T_h - T_l}{T_l}
+		      \text{Carnot efficiency } \eta_c \equiv (\frac{W}{Q_h})_\text{rev} = \frac{T_h - T_l}{T_l}
 	      \end{align}
 	      where h is the input heat and l is the leaving heat, \\
 	      \textcolor{violet}{aka we can not convert all input heat into work}
 	      \begin{align}
 		      \text{Carnot inequality } \eta = W/Q \leq 1 - (T_l/T_h) \equiv \eta_c
 	      \end{align}
-	\item Carnot inequality is the basic limit for heat engines
+	\item \textcolor{violet}{Carnot inequality is the basic limit for heat engines}
 \end{itemize}
 
 
@@ -80,7 +82,7 @@
 	      \begin{align}
 		      \text{Carnot coefficient of refrigerator performance } \lambda_c = (Q_l/W)_\text{rev} = \frac{T_l}{T_h - T_l}
 	      \end{align}
-	      This is an upper limit to the actual coefficient of refrigerator
+	      \textcolor{violet}{This is an upper limit to the actual coefficient of refrigerator}
 	\item air conditioners are refrigerators
 	\item heat pumps are reverse connections of an air conditioner
 \end{itemize}
@@ -118,7 +120,7 @@
 \end{itemize}
 
 
-\subsubsection{Path Dependence of Heat \& Work }
+\subsubsection{Path Dependence of Heat \& Work}
 \begin{itemize}
 	\item transfers of heat and work between state (a) and state (b) depend on the path
 	      taken between the two states \textcolor{violet}{heat \& work are not state functions}
@@ -134,12 +136,58 @@
 \end{itemize}
 
 
-\subsection{Heat \& Work at Constant Temp or Pressure }
+\subsection{Heat \& Work at Constant Temp or Pressure}
+
+\begin{itemize}
+    \item Isobaric process: constant pressure 
+    \item the effective work $dW \equiv dW + d(pV) = dU + d(pV) -dQ = dH - dQ$
+    where H is enthalpy ($H = U + pV$)
+    \begin{itemize}
+        \item $dQ = dH$: no effective work is done (heat liquid with no cap)
+        \item constant pressure and temp $dQ = T dS = d(TS)$
+    \end{itemize}
+    \item \textcolor{violet}{use enthalpy at constant pressure}
+    \item \textcolor{violet}{use gibbs free energy at constant P \& T} ($G = F + pV = U +pV - TS$)
+\end{itemize}
+
+\subsubsection{Chemical Work}
+\begin{itemize}
+    \item Chemical work: work performed by the transfer of particles to a system (associated with 
+    chemical potential)
+    \begin{align}
+        dW = \mu dN 
+    \end{align}
+    \item Chemical potential (reference figure 8.14)
+    \begin{itemize}
+        \item is the work required to transfer 1 particle into the system 
+        \item the difference in chemical potential between 2 systems is equal to the net work 
+        required to move a particle from 1 system to the other (if there is 0 volume work)
+        $dW = \mu_a dN_a + \mu_b dN_b = (\mu_b - \mu_a)dN$
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=.75\textwidth]{Figures/chemical_work.png}
+            \label{fig:chemical_work}
+        \end{figure}
+        \item if 2 systems are in diffuse equilibrium ($\mu_a = \mu_b$), no work is required to move 
+        the particles
+    \end{itemize}
+\end{itemize}
 
 
+\subsubsection{Heat Capacity}
+\begin{itemize}
+    \item the heat capacity of a system at constant volume is 
+    \begin{align}
+        C_V \equiv T \pdv{S}{T}_V
+    \end{align}
+    in fundamental units its unitless but the conventional nits are energy / kelvin 
+\end{itemize}
 
 
-end page 261!
+\subsubsection{Specific Heat}
+\begin{itemize}
+    \item is the heat capacity per unit mass 
+\end{itemize}
 
 
 \subsection{Some Discussion Notes}
@@ -156,4 +204,10 @@ end page 261!
 		            ($\Delta U = \Delta Q - \Delta W$), \textcolor{violet}{aka no work is done!!}
 		      \item this system is also quassi static which means it's always in equilibrium
 	      \end{itemize}
+\end{itemize}
+
+
+\subsection{Example Problems to try:}
+\begin{itemize}
+    \item 2024 Qual: \#1, \#3, \#4
 \end{itemize}
